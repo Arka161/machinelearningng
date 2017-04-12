@@ -87,7 +87,7 @@ end
 	
 % Cost Function(Regularization)
 
-regg=(lambda/(2*m))*((sum(sum(Theta1(:,2:end).^2)))+ (sum(sum(Theta2(:,2:end).^2))));
+regg=(lambda/(2*m))*((sum(sum(Theta1(:,2:end).^2)))+ (sum(sum(Theta2(:,2:end).^2)))); %Sum of Square of all Theta
 J=J+regg; 
 
 
