@@ -66,12 +66,12 @@ Theta2_grad = zeros(size(Theta2));
 %Forward Propagation(Feedforward)
 
 
-a1=[ones(m,1),X];
+a1=[ones(m,1),X];	%Adding ones
 z2=a1*Theta1'; 
 a2=sigmoid(z2);
-a2=[ones(m,1),a2];
-z3=a2*Theta2';
-hyp=sigmoid(z3);
+a2=[ones(m,1),a2];	%Adding ones
+z3=a2*Theta2';		
+hyp=sigmoid(z3);	
 
 
 % Cost Function(Normal)
